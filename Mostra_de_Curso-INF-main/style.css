@@ -1,0 +1,270 @@
+@font-face {
+    font-family: 'game-title';
+    src: url(fontes/game_over.ttf) format('truetype');
+    font-family: 'game-title2';
+    src: url(fontes/Retro\ Gaming.ttf) format('truetype');
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+
+body {
+    background-color: #000000;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 70px;
+    color: #006905;
+    margin-right: 40%;
+    margin-bottom: 50px;
+    font-family: 'VT323';
+    margin-top: 50px;
+}
+
+p {
+    font-size: 25px;
+    color: #fff;
+    font-family: 'Khand';
+    margin-right: 40%;
+}
+.title-center{
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/*MENU*/
+/*MENU*/
+/*MENU*/
+/*MENU*/
+.interface {
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+header .logo img {
+    max-width: 50px;
+    height: auto;
+    border-radius: 50%;
+}
+
+header {
+    width: 100%;
+    padding: 15px 0;
+
+}
+
+header .interface {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .menudesktop nav ul {
+    list-style-type: none;
+}
+
+header .menudesktop nav ul li {
+    display: inline-block;
+    margin: 0 40px;
+    font-size: 20px;
+}
+
+header .menudesktop nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.2s;
+}
+
+header .ficha button {
+    width: 160px;
+    height: 55px;
+    font-size: 15px;
+    background-color: transparent;
+    border: #fff 2px solid;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.5s
+}
+
+header .menudesktop nav ul li a:hover {
+    transform: scale(1.05);
+}
+
+header .ficha button:hover {
+    background-color: #fff;
+    color: #000
+}
+
+/*MENU*/
+/*MENU*/
+/*MENU*/
+/*MENU*/
+
+.section-inicio {
+    background-image: url(imgs/Mostra\ \ inf.png);
+    padding: 200px;
+}
+
+/*BENEF*/
+/*BENEF*/
+/*BENEF*/
+/*BENEF*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#beneficio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.beneficio-inf {
+    width: 100%;
+    width: 820px;
+    height: 340px;
+    display: flex;
+    gap: 10px;
+    margin-inline: 50px;
+}
+
+.card {
+    min-width: 70px;
+    height: 100%;
+    border-radius: 30px;
+    overflow: hidden;
+
+    display: flex;
+    align-items: flex-end;
+    flex-grow: 1;
+    cursor: pointer;
+    position: relative;
+    transition: flex-grow 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+
+    --transition-timing: 0.35s;
+}
+
+.card.active {
+    flex-grow: 100;
+}
+
+.card:hover {
+    flex-grow: 7;
+}
+
+.card>.background {
+    position: absolute;
+    inset: 0;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(0.4);
+    z-index: -1;
+    transition: var(--transition-timing) ease;
+}
+
+.card:hover>.background {
+    filter: brightness(1);
+}
+
+.card>.card-content {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 20px;
+    overflow: hidden;
+    transition: var(--transition-timing);
+    z-index: 10;
+}
+
+.card:hover>.card-content {
+    inset: 20px;
+    top: auto;
+}
+
+.card-content>* {
+    transition: var(--transition-timing);
+}
+
+.card-content>.profile-image {
+    min-width: 50px;
+    max-width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.card:hover .profile-image {
+    border: 1px solid rgb(110, 252, 205);
+}
+
+.profile-image>svg {
+    stroke: #fefefe;
+}
+
+.card:hover .profile-image>svg {
+    stroke: rgb(110, 252, 205);
+}
+
+.card-content>.title {
+    white-space: pre;
+    margin-left: 10px;
+    translate: 0 100%;
+    opacity: 0;
+}
+
+.card:hover .title {
+    opacity: 1;
+    translate: 0 0;
+}
+
+.card>.backdrop {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100px;
+    z-index: 0;
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.7));
+}
+
+/*BENEF*/
+/*BENEF*/
+/*BENEF*/
+/*BENEF*/

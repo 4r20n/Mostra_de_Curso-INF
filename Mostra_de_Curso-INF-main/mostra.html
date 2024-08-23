@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mostra de INF 2024</title>
+    <script>
+        const cardsContainer = document.querySelector(".container");
+
+        cardsContainer.addEventListener("click", (e) => {
+            const target = e.target.closest(".card");
+
+            if (!target) return;
+
+            cardsContainer.querySelectorAll(".card").forEach((card) => {
+                card.classList.remove("active");
+            });
+
+            target.classList.add("active");
+        });
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tiny5&family=VT323&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="interface">
+            <section class="logo">
+                <img src="imgs/cefet.png" alt="LOGO">
+            </section>
+            <section class="menudesktop">
+                <nav>
+                    <ul>
+                        <li><a href="mostra.html">Inicio</a></li>
+                        <li><a href="#">Vetreranos</a></li>
+                        <!-- <li><a href="Dnd-Classes.html">Classes</a></li>
+                        <li><a href="Dnd-Raças.html">Raças</a></li>
+                        <li><a href="Dnd-Lendas.html">Lendas</a></li> -->
+                    </ul>
+                </nav>
+            </section>
+            <section class="ficha">
+                <a href="#">
+                    <button>
+                        Crie sua ficha
+                    </button>
+                </a>
+            </section>
+        </div>
+    </header>
+    <section class="section-inicio">
+        <h1>Mostra de Informatica</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores totam sed tenetur laudantium quas! Soluta
+            minus
+            maxime culpa distinctio! Adipisci corrupti officia, dicta quae ut facilis alias unde quia perferendis.</p>
+    </section>
+
+    <h1 class="title-center">O que voce vai aprender</h1>
+    <section id="beneficio">
+        <div class="beneficio-inf">
+            <div class="card">
+                <img class="background" src="imgs/Html2.png" alt="">
+
+                <div class="card-content">
+                    <div class="profile-image">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#e8eaed">
+                            <path
+                                d="M0-360v-240h60v80h80v-80h60v240h-60v-100H60v100H0Zm310 0v-180h-70v-60h200v60h-70v180h-60Zm170 0v-200q0-17 11.5-28.5T520-600h180q17 0 28.5 11.5T740-560v200h-60v-180h-40v140h-60v-140h-40v180h-60Zm320 0v-240h60v180h100v60H800Z" />
+                        </svg>
+                    </div>
+
+                    <h3 class="title"></h3>
+                </div>
+                <div class="backdrop"></div>
+            </div>
+
+            <div class="card">
+                <img class="background" src="imgs/Cec++.png" alt="">
+
+                <div class="card-content">
+                    <div class="profile-image">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M320-240 80-480l240-240 57 57-184 184 183 183-56 56Zm320 0-57-57 184-184-183-183 56-56 240 240-240 240Z"/></svg>
+                    </div>
+
+                    <h3 class="title">Spider-Man PS5</h3>
+                </div>
+                <div class="backdrop"></div>
+            </div>
+
+            <div class="card">
+                <img class="background" src="imgs/VETERANO.png" alt="">
+
+                <div class="card-content">
+                    <div class="profile-image">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"/></svg>
+                    </div>
+
+                    <h3 class="title">God Of War</h3>
+                </div>
+                <div class="backdrop"></div>
+            </div>
+
+            <div class="card">
+                <img class="background" src="imgs/Computer.png" alt="">
+
+                <div class="card-content">
+                    <div class="profile-image">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M40-120v-80h880v80H40Zm120-120q-33 0-56.5-23.5T80-320v-440q0-33 23.5-56.5T160-840h640q33 0 56.5 23.5T880-760v440q0 33-23.5 56.5T800-240H160Zm0-80h640v-440H160v440Zm0 0v-440 440Z"/></svg>
+                    </div>
+
+                    <h3 class="title">The Last of Us</h3>
+                </div>
+                <div class="backdrop"></div>
+            </div>
+
+            <div class="card">
+                <img class="background" src="imgs/kallista.png" alt="">
+
+                <div class="card-content">
+                    <div class="profile-image">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-gamepad-2">
+                            <line x1="6" x2="10" y1="11" y2="11" />
+                            <line x1="8" x2="8" y1="9" y2="13" />
+                            <line x1="15" x2="15.01" y1="12" y2="12" />
+                            <line x1="18" x2="18.01" y1="10" y2="10" />
+                            <path
+                                d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z" />
+                        </svg>
+                    </div>
+
+                    <h3 class="title">Elden Ring</h3>
+                </div>
+                <div class="backdrop"></div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
